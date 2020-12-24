@@ -9,15 +9,15 @@ typora 图片上传存储
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+https://blog.csdn.net/tangyb828/article/details/105998084/
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+目前我本地 0.9.77(beta) 版本是可以正常打开偏好设置的，如果存在这个问题，可以尝试通过下面的步奏解决：
+
+可以把备份下来的 window.html 文件恢复回去。
+然后手动编辑恢复回去的文件，搜索<script src="./app/window/frame.js" defer="defer"></script> 在其后面加上一行：<script src="./plugins/image/upload.js" defer="defer"></script> 然后再试试是否能恢复正常。
+注：readme中覆盖 window.html 只是为了引入 ./plugins/image/upload.js 文件，但不同版本window.html文件可能存在一些差异，确实 有可能出现你说的这个问题。
 
 #### 参与贡献
 
